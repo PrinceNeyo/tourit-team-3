@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href='signin-signup.css'/>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Sign Up Page</title>
+  </head>
+
+  <body>
+    <div class="signup-page-container">
+      <div class="signup-form">
+        <!-- <form action="." class="signup-form-container" method="POST">
+          {% csrf_token %}
+
+          <label for="fullname" class="sign-up-label"
+            >{{ form.first_name.label }}</label
+          >
+
+          {{ form.first_name }}
+          <label class="sign-up-label">{{ form.username.label }}</label>
+          {{ form.username }} {{ form.email.label }} {{ form.email }} {{
+          form.password.label }} {{ form.password }} {{ form.password2.label }}
+          {{ form.password2 }} -->
+
+          <h3 class="create-acc">Create Account</h3>
+
+            
+            <input
+              type="text"
+              placeholder=""
+              name="fullname"
+              class="sign-up-input"
+              required
+            />
+
+            <label for="email" class="sign-up-label">Email Address</label>
+            <input
+              type="email"
+              placeholder=""
+              name="email"
+              class="sign-up-input"
+              required
+            />
+
+            <label for="psw" class="sign-up-label">Password</label>
+            <input
+              type="password"
+              placeholder=""
+              name="psw"
+              class="sign-up-input"
+              required
+            />
+
+            <label for="topics" class="sign-up-label"
+              >Topics you are interested</label
+            >
+            <select class="trips">
+              <option class="trip" value="trip">Road Trips</option>
+              <option class="trip" value="trip">Air Trips</option>
+              <option class="trip" value="trip">Sea Trips</option>
+            </select>
+
+            <label for="work-link" class="sign-up-label"
+              >Link to any of your works</label
+            >
+            <input
+              type="text"
+              placeholder="Paste here"
+              name="work-link"
+              class="sign-up-input"
+              required
+            />
+
+          <div class="sign-up-btn">
+            <a href="./sign-in.html"><input type="submit" class="signupbtn" value="Sign Up" /></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

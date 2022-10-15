@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --grey: #a6a7a8;
+  --blue: #2b7a8a;
+  --light-blue: #a6d9e3;
+  --categories: #e6ceb6;
+  --categories-text: #1e1e1e;
+  --latest-post: #d1bba6;
+  --black: #000000;
+  --dark-grey: #3d4041;
+  --sidebar-bg: #ecf6f9;
+  --sign-up-bg: #c3e5eca6;
+  --error-brown: #a65c33;
+  --error-text: #fafafa;
+  --error-subtext: #031013;
+  --terms-text: #031013;
+  --forgot-text: #a83434;
+  --footer: #444141;
+  --input-b-color: #faf8f6;
+  --navbar: #ecf6f9;
+  --search-icon: #a6d9e3;
+  --hoverblue: #39a6bc;
+  --hover-instagram: #c32aa3;
+  --hover-facebook: #1877f2;
+  --hover-gmail: #4285f4;
+  --hover-twitter: #1da1f2;
+}
+
+.container {
+  padding: 1rem 4rem 0 5rem;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-container {
+}
+
+.form-container input {
+  display: block;
+  padding: 0.5rem 22rem 1rem 0.5rem;
+  border-radius: 1rem;
+  outline: none;
+  margin: 1rem 0;
+}
+textarea {
+  display: block;
+  padding: 0.5rem 18rem 1rem 0.5rem;
+  border-radius: 1rem;
+  outline: none;
+  margin: 1rem 0;
+}
+
+.contact-head {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.contact-image {
+  margin-top: -15rem;
+}
+
+label {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+.radio-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sends {
+  background: var(--hoverblue);
+  border-radius: 1rem;
+  color: var(--input-b-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 0.8rem 15rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 997px) {
+}
+
+@media (max-width: 888px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 450px) {
+}

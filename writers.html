@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Tourit-Blog</title>
+  </head>
+  <style>
+    .sub {
+      display: flex;
+      gap: 4rem;
+      padding: 2rem 3rem 0 3rem;
+    }
+
+    main {
+      display: flex;
+      margin: 162px 0 0 0;
+      width: 100%;
+    }
+
+    .side-text {
+      width: 60%;
+    }
+
+    .side-text h3,
+    .side-text h2 {
+      margin-bottom: 1.5rem;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #2b7a8a;
+    }
+    .butss {
+      border: none;
+      color: ghostwhite;
+      padding: 1rem 3rem;
+      cursor: pointer;
+      background-color: #d1bba6;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    .writer-img {
+      width: 60%;
+      margin-top: -100px;
+    }
+
+    .foot-img img {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        align-items: center;
+        margin-top: 7rem;
+      }
+      .side-text h3,
+      .side-text h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #2b7a8a;
+      }
+      .foot-img img {
+        position: fixed;
+        bottom: 0;
+      }
+    }
+    @media (max-width: 550px) {
+      main {
+        flex-direction: column-reverse;
+        margin: 10rem auto;
+        justify-items: center;
+      }
+      .side-text,
+      .writer-img {
+        width: 100%;
+        align-items: center;
+        justify-items: flex-start;
+      }
+    }
+  </style>
+  <body>
+    <div class="navbar-cont">
+      <div class="navbar">
+        <div>
+          <a href="index.html"
+            ><img src="./images/logo.png" alt="logo" class="logo-img"
+          /></a>
+        </div>
+        <form class="search-btn">
+          <input
+            type="text"
+            class="topbar-input"
+            placeholder="search here"
+            id="search-box"
+          />
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
+        <div class="menu-toggle">
+          <div class="hamburger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub">
+      <aside class="sidebar">
+        <figure class="logo">
+          <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+        </figure>
+        <div class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input
+            type="text"
+            class="sidebar-input"
+            placeholder="looking for a location"
+            id="search-box"
+          />
+        </div>
+        <i></i>
+
+        <nav class="sidebar-menu">
+          <ul>
+            <li>
+              <figure><img src="./images/home.svg" alt="" /></figure>
+              <a href="index.html" class="nav-link" id="nav-link-1">Home</a>
+            </li>
+            <li>
+              <figure><img src="./images/blog-post.svg" alt="" /></figure>
+              <a href="blog.html" class="nav-link" id="nav-link-3"
+                >Blog post
+              </a>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/write-for-us.svg" alt="" class="active" />
+              </figure>
+              <a href="new-blog.html" class="nav-link active" id="nav-link-4"
+                >Write for us
+              </a>
+            </li>
+            <li>
+              <figure><img src="./images/gallery.svg" alt="" /></figure>
+              <a href="gallery.html" class="nav-link" id="nav-link-5">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <figure><img src="./images/archive.svg" alt="" /></figure>
+              <a href="archive.html" class="nav-link" id="nav-link-5">
+                Archive
+              </a>
+            </li>
+            <li>
+              <figure><img src="./images/about.svg" alt="" /></figure>
+              <a href="about-us.html" class="nav-link" id="nav-link-2"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <figure><img src="./images/call-add.svg" alt="" /></figure>
+              <a href="contact.html" class="nav-link" id="nav-link-5">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <div class="side-text">
+          <h3>
+            Are you a blogger, <br />
+            vlogger or influencer ? <br />
+          </h3>
+          <h2>
+            Do you want to be <br />
+            featured as a freelance <br />
+            writer on Tourit?
+          </h2>
+
+          <a href="sign-up.html"><button class="butss">WRITE FOR US</button></a>
+        </div>
+        <div class="writer-img">
+          <img src="./images/writer.png" width="100%" alt="" />
+        </div>
+      </main>
+    </div>
+    <div class="foot-img">
+      <img src="./images/blue-lwave-ight.png" alt="" />
+    </div>
+  </body>
+  <script>
+    // side bar
+    const menu_toggle = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    menu_toggle.addEventListener("click", () => {
+      menu_toggle.classList.toggle("is-active");
+      sidebar.classList.toggle("is-active");
+    });
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+  </script>
+</html>

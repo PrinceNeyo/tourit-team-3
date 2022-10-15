@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:root {
+  --grey: #a6a7a8;
+  --blue: #2b7a8a;
+  --light-blue: #a6d9e3;
+  --categories: #e6ceb6;
+  --categories-text: #1e1e1e;
+  --latest-post: #d1bba6;
+  --black: #000000;
+  --dark-grey: #3d4041;
+  --sidebar-bg: #ecf6f9;
+  --sign-up-bg: #c3e5eca6;
+  --error-brown: #a65c33;
+  --error-text: #fafafa;
+  --error-subtext: #031013;
+  --terms-text: #031013;
+  --forgot-text: #a83434;
+  --footer: #444141;
+  --input-b-color: #faf8f6;
+}
+
+/* 404 Error .... Start */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .message {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  text-align: center;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.wrapper .btn {
+  background: var(--error-brown);
+  padding: 1rem 5rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  color: var(--error-text);
+  margin-top: -2.5rem;
+}
+
+.wrapper .btn:hover {
+  background-color: var(--latest-post);
+}
+/* 404 Error ..... End */
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .wrapper {
+    margin-top: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .wrapper .message {
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin-top: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .wrapper .message {
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    margin-top: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .wrapper .message {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    margin-bottom: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .wrapper .message {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .wrapper .message {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .wrapper .message {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .wrapper .message {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .wrapper .message {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+  }
+
+  .wrapper .btn {
+    white-space: nowrap;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    padding: 1rem 2.5rem;
+  }
+}
