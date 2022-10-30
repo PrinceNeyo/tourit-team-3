@@ -72,6 +72,7 @@ main {
 }
 
 .con-text {
+  text-align: justify;
   margin-top: 1rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -230,7 +231,7 @@ textarea {
 .btn-cmt {
   padding: 0.5rem 1.5rem;
   float: right;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   margin-top: 0.3rem;
   border: none;
   color: var(--input-b-color);
@@ -264,7 +265,7 @@ textarea {
 .p1 {
   color: var(--categories);
 }
-.p1-dis {
+.email-dis {
   display: none;
 }
 
@@ -334,25 +335,15 @@ textarea {
 }
 
 @media (max-width: 888px) {
+  textarea,
+  .input-cmt {
+    width: 90%;
+  }
+  .btn-cmt {
+    float: left;
+  }
   .vl {
-    display: none;
-  }
-  .comments {
-    display: block;
-    margin-top: 3rem;
-  }
-
-  .comments-con {
-    flex-direction: column;
-  }
-  .p1 {
-    display: none;
-  }
-  .p1-dis {
-    display: block;
-    color: var(--categories);
-    margin: 1rem;
-    text-align: center;
+    margin-right: 0.7rem;
   }
 }
 
@@ -392,6 +383,64 @@ textarea {
     font-size: 1.5rem;
     color: var(--blog-text);
   }
+  .cont {
+    display: block;
+  }
+  .comments-con {
+    /* display: block; */
+    flex-direction: column;
+  }
+  textarea,
+  .input-cmt,
+  .input-area {
+    width: 100%;
+  }
+  .btn-cmt {
+    float: right;
+  }
+  .vl {
+    transform: rotate(180deg);
+    width: 40%;
+    height: 0;
+    margin: 1rem auto;
+  }
+  .h3-email,
+  .input-cmt {
+    display: none;
+  }
+  .email-dis {
+    display: block;
+    margin-top: 2rem;
+  }
+  .email-dis .h3-email-dis {
+    /* font-weight: 400; */
+    font-size: 16px;
+    color: var(--blog-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .email-dis .input-cmt-dis {
+    border-radius: 0.4rem;
+    border: 1px solid var(--blog-text);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 70%;
+  }
+  .down-cmt {
+    /* flex-direction: column; */
+    float: right;
+    text-align: right;
+  }
+  .p1 {
+    display: none;
+  }
+  .p1-dis {
+    color: var(--categories);
+  }
+  .commenters {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -410,9 +459,7 @@ textarea {
     color: var(--blog-text);
     line-height: 120%;
   }
-  .input-area {
-    width: 100%;
-  }
+
   .con-text {
     margin-top: 1rem;
     font-weight: 400;
