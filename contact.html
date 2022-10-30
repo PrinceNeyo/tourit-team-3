@@ -15,31 +15,36 @@
   </head>
   <body>
     <div class="container">
-      <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
-      <h5 class="contact-head">We would love to hear from you</h5>
-      <div class="contact-container">
-        <form class="form-container" action="">
-          <label for="name">Full name</label>
-          <input type="text" placeholder="What's your full name?" />
-          <label for="name">Email Address</label>
-          <input type="email" placeholder="yellow@gmail.com" />
-          <label for="">Message</label>
-          <textarea
-            name=""
-            id=""
-            placeholder="Write your message for the team"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <div class="radio-head">
-            <input type="radio" name="" id="" />
-            <p class="home-content-pa">
-              I agree to Tourit terms of service and privacy policy
-            </p>
+      <a href="index.html"
+        ><img src="./images/logo.png" alt="logo" class="logos"
+      /></a>
+      <div class="subs-cont">
+        <div class="contacter">
+          <h1>We would love to hear from you</h1>
+          <div class="infields">
+            <p class="legends">Full Name</p>
+            <input type="text" placeholder="What's your full name?" required />
           </div>
-          <button class="sends">Send</button>
-        </form>
 
+          <div class="infields">
+            <p class="legends">Email Address</p>
+            <input type="email" placeholder="yellow@example.com" required />
+          </div>
+
+          <div class="msgfields">
+            <p class="legends">Message</p>
+            <input
+              type="text"
+              placeholder="Write  your message for the team"
+              required
+            />
+          </div>
+          <div class="agreed">
+            <input type="radio" name="" id="" />
+            <p>I agree to Touit terms of service and private policy</p>
+          </div>
+          <button type="submit" class="sent">Send</button>
+        </div>
         <div class="contact-image">
           <img src="./images/Vector.png" alt="" />
         </div>

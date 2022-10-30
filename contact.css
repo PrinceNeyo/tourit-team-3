@@ -35,81 +35,93 @@ body {
   --hover-facebook: #1877f2;
   --hover-gmail: #4285f4;
   --hover-twitter: #1da1f2;
+  --input-text: #2b2d2e;
 }
-
 .container {
-  padding: 1rem 4rem 0 5rem;
 }
 
-.contact-container {
+.subs-cont {
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 3rem; */
+  margin: 0 auto;
 }
 
-.form-container {
+.contacter {
+  width: 35%;
 }
-
-.form-container input {
-  display: block;
-  padding: 0.5rem 22rem 1rem 0.5rem;
-  border-radius: 1rem;
-  outline: none;
-  margin: 1rem 0;
-}
-textarea {
-  display: block;
-  padding: 0.5rem 18rem 1rem 0.5rem;
-  border-radius: 1rem;
-  outline: none;
-  margin: 1rem 0;
-}
-
-.contact-head {
+.contacter h1 {
+  margin-bottom: 3rem;
   font-weight: 700;
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 120%;
+  color: var(--input-text);
 }
-
-.contact-image {
-  margin-top: -15rem;
+.infields {
+  margin-bottom: 2rem;
 }
-
-label {
+.msgfields {
+  margin-bottom: 1rem;
+}
+.legends {
   font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: var(--input-text);
+  margin-left: 0.8rem;
 }
-
-input[type="radio"] {
-  display: inline;
-}
-
-.radio-head {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.sends {
-  background: var(--hoverblue);
+.infields input {
+  width: 35rem;
+  height: 3.5rem;
+  padding: 0.5rem 0 1rem 0.5rem;
+  background: #fafafa;
+  border: 1px solid #383a3b;
   border-radius: 1rem;
-  color: var(--input-b-color);
+}
+.msgfields input {
+  width: 35rem;
+  height: 9.5rem;
+  padding: 1rem 0 8rem 0.5rem;
+  background: #fafafa;
+  border: 1px solid #383a3b;
+  border-radius: 1rem;
+}
+input::placeholder {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 160%;
+  color: var(--grey);
+}
+.agreed {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+.agreed p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+  color: var(--input-text);
+}
+.sent {
+  padding: 0.7rem 16rem;
   font-weight: 700;
   font-size: 1.5rem;
   text-align: center;
-  outline: none;
+  color: #fafafa;
+  background: #3dacc2;
+  border-radius: 0.9rem;
   border: none;
-  padding: 0.8rem 15rem;
+  cursor: pointer;
+}
+.contact-image {
+  width: 40%;
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
 }
-
-@media (max-width: 997px) {
-}
-
 @media (max-width: 888px) {
 }
 
