@@ -119,42 +119,184 @@
         <div class="gallery-container">
           <h3>Egypt</h3>
           <div class="image-cont">
-            <img
-              class="image"
-              src="./images/pyramidofegypt.png"
-              alt="alexandria"
-              style="animation-duration: 0.1s"
-            />
-            <img
-              class="image"
-              src="./images/alexandria.png"
-              alt="alexandria"
-              style="animation-duration: 0.25s"
-            />
-            <img
-              class="image"
-              src="./images/abusimbeltemple.png"
-              alt="temple"
-              style="animation-duration: 0.5s"
-            />
-            <img
-              class="image"
-              src="./images/nilecruising.png"
-              alt="nilecruising"
-              style="animation-duration: 0.75s"
-            />
-            <img
-              class="image"
-              src="./images/cairomosque.png"
-              alt="cairomosque"
-              style="animation-duration: 1s"
-            />
-            <img
-              class="image"
-              src="./images/templeofhathor.png"
-              alt="hathor"
-              style="animation-duration: 1.25s"
-            />
+            <div class="column">
+              <img
+                class="image"
+                src="./images/pyramidofegypt.png"
+                alt="alexandria"
+                style="animation-duration: 0.1s"
+                onclick="openModal();currentSlide(1)"
+                class="hover-shadow cursor"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="image"
+                src="./images/alexandria.png"
+                alt="alexandria"
+                style="animation-duration: 0.25s"
+                onclick="openModal();currentSlide(2)"
+                class="hover-shadow cursor"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="image"
+                src="./images/abusimbeltemple.png"
+                alt="temple"
+                style="animation-duration: 0.5s"
+                onclick="openModal();currentSlide(3)"
+                class="hover-shadow cursor"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="image"
+                src="./images/nilecruising.png"
+                alt="nilecruising"
+                style="animation-duration: 0.75s"
+                onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="image"
+                src="./images/cairomosque.png"
+                alt="cairomosque"
+                style="animation-duration: 1s"
+                onclick="openModal();currentSlide(5)"
+                class="hover-shadow cursor"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="image"
+                src="./images/templeofhathor.png"
+                alt="hathor"
+                style="animation-duration: 1.25s"
+                onclick="openModal();currentSlide(6)"
+                class="hover-shadow cursor"
+              />
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img
+                  src="./images/pyramidofegypt.png"
+                  alt="Pyramid of Egypt"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img
+                  src="./images/alexandria.png"
+                  alt="Alexandria"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img
+                  src="./images/abusimbeltemple.png"
+                  alt="Temple"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img
+                  src="./images/nilecruising.png"
+                  alt="Nile cruising"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img
+                  src="./images/cairomosque.png"
+                  alt="Cairo Mosque"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img
+                  src="./images/templeofhathor.png"
+                  alt="Hathor"
+                  style="width: 100%"
+                />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./images/pyramidofegypt.png"
+                  alt="Pyramid"
+                  style="width: 100%"
+                  onclick="currentSlide(1)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./images/alexandria.png"
+                  alt="Alexandria"
+                  style="width: 100%"
+                  onclick="currentSlide(2)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./images/abusimbeltemple.png"
+                  alt="Temple"
+                  style="width: 100%"
+                  onclick="currentSlide(3)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./images/nilecruising.png"
+                  alt="Nile Cruising"
+                  style="width: 100%"
+                  onclick="currentSlide(4)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./images/cairomosque.png"
+                  alt="Cairo Mosque"
+                  style="width: 100%"
+                  onclick="currentSlide(5)"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="demo cursor"
+                  src="./images/templeofhathor.png"
+                  alt="Hathor"
+                  style="width: 100%"
+                  onclick="currentSlide(6)"
+                />
+              </div>
+            </div>
           </div>
 
           <h3>Kenya</h3>
@@ -237,10 +379,10 @@
             />
           </div>
 
-          <div class="popup-image">
+          <!-- <div class="popup-image">
             <span>&times;</span>
             <img src="./images/egypt-pyramid.png" alt="pyramid" />
-          </div>
+          </div> -->
         </div>
       </main>
     </div>
@@ -371,18 +513,59 @@
         sidebar.classList.toggle("is-active");
       });
 
-      // image popup
-      document.querySelectorAll(".image-cont img").forEach((image) => {
-        image.onclick = () => {
-          document.querySelector(".popup-image").style.display = "block";
-          document.querySelector(".popup-image img").src = gall =
-            image.getAttribute("src");
-        };
-      });
+      // // image popup
+      // document.querySelectorAll(".image-cont img").forEach((image) => {
+      //   image.onclick = () => {
+      //     document.querySelector(".popup-image").style.display = "block";
+      //     document.querySelector(".popup-image img").src = gall =
+      //       image.getAttribute("src");
+      //   };
+      // });
 
-      document.querySelector(".popup-image span").onclick = () => {
-        document.querySelector(".popup-image").style.display = "none";
-      };
+      // document.querySelector(".popup-image span").onclick = () => {
+      //   document.querySelector(".popup-image").style.display = "none";
+      // };
+
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
     </script>
   </body>
 </html>
